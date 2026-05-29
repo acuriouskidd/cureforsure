@@ -129,9 +129,9 @@
   <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 text-[11px] font-medium tracking-wide">
     <div class="flex items-center gap-2.5 text-white/80">
       <span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-teal"></span></span>
-      <span x-show="currentLang==='en'">24/7 Urgent Inquiries: <a href="tel:+919205841758" class="text-gold hover:text-goldlt ml-1 font-bold">+91 92058 41758</a></span>
-      <span x-show="currentLang==='ar'" x-cloak>الاستفسارات العاجلة: <a href="tel:+919205841758" class="text-gold hover:text-goldlt ml-1 font-bold" dir="ltr">+91 92058 41758</a></span>
-      <span x-show="currentLang==='fr'" x-cloak>Urgences 24/7 : <a href="tel:+919205841758" class="text-gold hover:text-goldlt ml-1 font-bold">+91 92058 41758</a></span>
+      <span x-show="currentLang==='en'">24/7 Urgent Inquiries: <a href="tel:+919205841758" class="text-gold hover:text-goldlt ml-1 font-bold">+91 92058 41758</a>, <a href="tel:+917905623176" class="text-gold hover:text-goldlt font-bold">+91 79056 23176</a><span class="mx-2 text-white/30">|</span>Email: <a href="mailto:mail.cureforsure@gmail.com" class="text-gold hover:text-goldlt ml-1 font-bold">mail.cureforsure@gmail.com</a></span>
+      <span x-show="currentLang==='ar'" x-cloak>الاستفسارات العاجلة: <a href="tel:+919205841758" class="text-gold hover:text-goldlt ml-1 font-bold" dir="ltr">+91 92058 41758</a>، <a href="tel:+917905623176" class="text-gold hover:text-goldlt font-bold" dir="ltr">+91 79056 23176</a><span class="mx-2 text-white/30">|</span>البريد الإلكتروني: <a href="mailto:mail.cureforsure@gmail.com" class="text-gold hover:text-goldlt ml-1 font-bold">mail.cureforsure@gmail.com</a></span>
+      <span x-show="currentLang==='fr'" x-cloak>Urgences 24/7 : <a href="tel:+919205841758" class="text-gold hover:text-goldlt ml-1 font-bold">+91 92058 41758</a>, <a href="tel:+917905623176" class="text-gold hover:text-goldlt font-bold">+91 79056 23176</a><span class="mx-2 text-white/30">|</span>E-mail : <a href="mailto:mail.cureforsure@gmail.com" class="text-gold hover:text-goldlt ml-1 font-bold">mail.cureforsure@gmail.com</a></span>
     </div>
     <div class="flex items-center gap-3 bg-white/8 border border-white/10 px-3 py-1 rounded-full font-mono text-[10px]">
       <button @click="currentLang='en';dir='ltr'" :class="currentLang==='en'?'text-gold':'text-white/50 hover:text-white'" class="transition-colors">EN</button>
@@ -863,345 +863,263 @@
       <span class="badge bg-purple-50 border border-purple-200 text-purple-700 text-[10px] py-2 px-4">🧠 Neurosurgery</span>
     </div>
 
-    <!-- ── Somalia testimonials ── -->
-    <div class="mb-16">
-      <div class="flex items-center gap-4 mb-8 reveal">
-        <span class="text-4xl">🇸🇴</span>
-        <div>
-          <h3 class="font-display text-2xl font-semibold text-ink">Somalia</h3>
-          <span class="font-mono text-[10px] text-gold uppercase tracking-widest">Mogadishu · Hargeisa · Kismayo</span>
-        </div>
-        <div class="flex-1 h-px bg-ink/10 ms-4"></div>
-      </div>
-      <div class="grid md:grid-cols-3 gap-6">
+    <!-- Unified professional grid of international testimonials -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 reveal">
 
-        <!-- IVF · Somalia -->
-        <div class="testi-card bg-white rounded-2xl border border-ink/8 shadow-sm overflow-hidden flex flex-col reveal">
-          <div class="h-44 overflow-hidden relative gallery-item">
-            <img src="https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=600&q=80"
-              alt="Happy mother baby IVF success" class="w-full h-full object-cover rounded-none" />
-            <div class="img-overlay"></div>
-            <div class="absolute top-3 left-3"><span class="badge bg-rose-500/20 border border-rose-400/30 text-rose-200 text-[9px] backdrop-blur-sm">🌸 IVF Fertility</span></div>
-            <div class="absolute bottom-3 right-3 bg-ink/60 backdrop-blur-sm rounded-lg px-2.5 py-1.5">
-              <span class="font-mono text-[9px] text-gold uppercase tracking-widest block">Apollo Hospitals</span>
-              <span class="font-mono text-[8px] text-white/50 block">Fertility Centre</span>
-            </div>
+      <!-- Card 1: Somalia · IVF (Apollo) -->
+      <div class="testi-card bg-white rounded-2xl border border-ink/8 shadow-sm overflow-hidden flex flex-col reveal">
+        <div class="h-44 overflow-hidden relative gallery-item">
+          <img src="https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=600&q=80" alt="Somalian IVF Success" class="w-full h-full object-cover rounded-none" />
+          <div class="img-overlay"></div>
+          <div class="absolute top-3 left-3"><span class="badge bg-rose-500/20 border border-rose-400/30 text-rose-200 text-[9px] backdrop-blur-sm">🌸 IVF Fertility</span></div>
+          <div class="absolute bottom-3 right-3 bg-ink/60 backdrop-blur-sm rounded-lg px-2.5 py-1.5">
+            <span class="font-mono text-[9px] text-gold uppercase tracking-widest block">Apollo Hospitals</span>
+            <span class="font-mono text-[8px] text-white/50 block">Fertility Centre</span>
           </div>
-          <div class="p-6 flex-1 flex flex-col">
-            <div class="flex items-center gap-2 mb-3">
-              <div class="flex text-gold text-xs">★★★★★</div>
-              <span class="font-mono text-[9px] text-ink/40 uppercase tracking-wider">Verified</span>
-            </div>
-            <blockquote class="font-display text-[15px] italic text-ink/75 leading-relaxed flex-1">
-              "After six failed IVF attempts in Mogadishu and Nairobi, I had almost given up hope. The fertility team at Apollo Delhi customised a protocol specifically for my hormonal profile. Three months later, I was pregnant with twins. I wept at the scan. This hospital gave me the family I prayed for."
-            </blockquote>
-            <div class="mt-5 pt-4 border-t border-ink/8">
-              <div class="flex items-center gap-2.5">
-                <div class="w-8 h-8 rounded-full bg-rose-100 flex items-center justify-center text-sm">🌸</div>
-                <div>
-                  <p class="font-semibold text-[13px] text-ink">Hodan Abdi Warsame</p>
-                  <p class="font-mono text-[9px] text-teal uppercase tracking-wider mt-0.5">IVF · Twin Pregnancy · Mogadishu</p>
-                </div>
+          <span class="absolute top-3 right-3 text-xl">🇸🇴</span>
+        </div>
+        <div class="p-6 flex-1 flex flex-col">
+          <div class="flex items-center gap-2 mb-3">
+            <div class="flex text-gold text-xs">★★★★★</div>
+            <span class="font-mono text-[9px] text-ink/40 uppercase tracking-wider">Verified</span>
+          </div>
+          <blockquote class="font-display text-[14px] italic text-ink/75 leading-relaxed flex-1">
+            "After six failed IVF attempts in Mogadishu and Nairobi, I had almost given up hope. The fertility team at Apollo Delhi customised a protocol specifically for my hormonal profile. Three months later, I was pregnant with twins. This hospital gave me the family I prayed for."
+          </blockquote>
+          <div class="mt-5 pt-4 border-t border-ink/8">
+            <div class="flex items-center gap-2.5">
+              <div class="w-8 h-8 rounded-full bg-rose-100 flex items-center justify-center text-sm">🌸</div>
+              <div>
+                <p class="font-semibold text-[13px] text-ink">Hodan Abdi Warsame</p>
+                <p class="font-mono text-[9px] text-teal uppercase tracking-wider mt-0.5">IVF Success · Mogadishu, Somalia</p>
               </div>
             </div>
           </div>
         </div>
+      </div>
 
-        <!-- Oncology · Somalia -->
-        <div class="testi-card bg-ink rounded-2xl border border-white/5 shadow-sm overflow-hidden flex flex-col reveal delay-100">
-          <div class="h-44 overflow-hidden relative gallery-item">
-            <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=600&q=80"
-              alt="Cancer patient recovery hospital" class="w-full h-full object-cover rounded-none" />
-            <div class="absolute inset-0 bg-gradient-to-t from-ink/85 via-ink/20 to-transparent"></div>
-            <div class="absolute top-3 left-3"><span class="badge bg-amber-500/20 border border-amber-400/30 text-amber-300 text-[9px] backdrop-blur-sm">🎗️ Oncology</span></div>
-            <div class="absolute bottom-3 right-3 bg-ink/60 backdrop-blur-sm rounded-lg px-2.5 py-1.5">
-              <span class="font-mono text-[9px] text-gold uppercase tracking-widest block">Fortis Healthcare</span>
-              <span class="font-mono text-[8px] text-white/50 block">Cancer Centre</span>
-            </div>
+      <!-- Card 2: Somalia · Breast Cancer (Fortis) -->
+      <div class="testi-card bg-ink rounded-2xl border border-white/5 shadow-sm overflow-hidden flex flex-col reveal delay-100">
+        <div class="h-44 overflow-hidden relative gallery-item">
+          <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=600&q=80" alt="Cancer treatment oncology ward" class="w-full h-full object-cover rounded-none" />
+          <div class="absolute inset-0 bg-gradient-to-t from-ink/85 via-ink/20 to-transparent"></div>
+          <div class="absolute top-3 left-3"><span class="badge bg-amber-500/20 border border-amber-400/30 text-amber-300 text-[9px] backdrop-blur-sm">🎗️ Oncology</span></div>
+          <div class="absolute bottom-3 right-3 bg-ink/60 backdrop-blur-sm rounded-lg px-2.5 py-1.5">
+            <span class="font-mono text-[9px] text-gold uppercase tracking-widest block">Fortis Healthcare</span>
+            <span class="font-mono text-[8px] text-white/50 block">Cancer Centre</span>
           </div>
-          <div class="p-6 flex-1 flex flex-col">
-            <div class="flex items-center gap-2 mb-3">
-              <div class="flex text-gold text-xs">★★★★★</div>
-              <span class="font-mono text-[9px] text-white/30 uppercase tracking-wider">Verified</span>
-            </div>
-            <blockquote class="font-display text-[15px] italic text-white/75 leading-relaxed flex-1">
-              "I was diagnosed with Stage 3 breast cancer in Hargeisa. No CyberKnife, no oncologists of this calibre in the whole Horn of Africa. The CureForSure team arranged my visa in 36 hours. Fortis delivered 18 sessions of TrueBeam radiotherapy. Today I am two years cancer-free."
-            </blockquote>
-            <div class="mt-5 pt-4 border-t border-white/10">
-              <div class="flex items-center gap-2.5">
-                <div class="w-8 h-8 rounded-full bg-amber-900/40 border border-amber-700/40 flex items-center justify-center text-sm">🎗️</div>
-                <div>
-                  <p class="font-semibold text-[13px] text-white">Faadumo Osman Hassan</p>
-                  <p class="font-mono text-[9px] text-gold uppercase tracking-wider mt-0.5">Breast Cancer · Remission · Hargeisa</p>
-                </div>
+          <span class="absolute top-3 right-3 text-xl">🇸🇴</span>
+        </div>
+        <div class="p-6 flex-1 flex flex-col">
+          <div class="flex items-center gap-2 mb-3">
+            <div class="flex text-gold text-xs">★★★★★</div>
+            <span class="font-mono text-[9px] text-white/30 uppercase tracking-wider">Verified</span>
+          </div>
+          <blockquote class="font-display text-[14px] italic text-white/75 leading-relaxed flex-1">
+            "I was diagnosed with Stage 3 breast cancer in Hargeisa. No CyberKnife, no oncologists of this calibre in the Horn of Africa. The CureForSure team arranged my visa in 36 hours. Fortis delivered 18 sessions of TrueBeam radiotherapy. Today I am cancer-free."
+          </blockquote>
+          <div class="mt-5 pt-4 border-t border-white/10">
+            <div class="flex items-center gap-2.5">
+              <div class="w-8 h-8 rounded-full bg-amber-900/40 border border-amber-700/40 flex items-center justify-center text-sm">🎗️</div>
+              <div>
+                <p class="font-semibold text-[13px] text-white">Faadumo Osman Hassan</p>
+                <p class="font-mono text-[9px] text-gold uppercase tracking-wider mt-0.5">Breast Cancer · Hargeisa, Somalia</p>
               </div>
             </div>
           </div>
         </div>
+      </div>
 
-        <!-- Transplant · Somalia -->
-        <div class="testi-card bg-teal rounded-2xl border border-teal/30 shadow-sm overflow-hidden flex flex-col reveal delay-200">
-          <div class="h-44 overflow-hidden relative gallery-item">
-            <img src="https://images.unsplash.com/photo-1631815588090-d4bfec5b1ccb?auto=format&fit=crop&w=600&q=80"
-              alt="Organ transplant ICU hospital" class="w-full h-full object-cover rounded-none" />
-            <div class="absolute inset-0 bg-gradient-to-t from-teal/85 via-teal/20 to-transparent"></div>
-            <div class="absolute top-3 left-3"><span class="badge bg-white/20 border border-white/30 text-white text-[9px] backdrop-blur-sm">🫀 Kidney Transplant</span></div>
-            <div class="absolute bottom-3 right-3 bg-ink/60 backdrop-blur-sm rounded-lg px-2.5 py-1.5">
-              <span class="font-mono text-[9px] text-gold uppercase tracking-widest block">Max Healthcare</span>
-              <span class="font-mono text-[8px] text-white/50 block">Transplant Unit</span>
-            </div>
+      <!-- Card 3: Sudan · IVF (CK Birla) -->
+      <div class="testi-card bg-white rounded-2xl border border-ink/8 shadow-sm overflow-hidden flex flex-col reveal delay-200">
+        <div class="h-44 overflow-hidden relative gallery-item">
+          <img src="https://images.unsplash.com/photo-1555252333-9f8e92e65df9?auto=format&fit=crop&w=600&q=80" alt="IVF fertility success family" class="w-full h-full object-cover rounded-none" />
+          <div class="img-overlay"></div>
+          <div class="absolute top-3 left-3"><span class="badge bg-rose-500/20 border border-rose-400/30 text-rose-200 text-[9px] backdrop-blur-sm">🌸 IVF Fertility</span></div>
+          <div class="absolute bottom-3 right-3 bg-ink/60 backdrop-blur-sm rounded-lg px-2.5 py-1.5">
+            <span class="font-mono text-[9px] text-gold uppercase tracking-widest block">CK Birla Hospital</span>
+            <span class="font-mono text-[8px] text-white/50 block">IVF Centre</span>
           </div>
-          <div class="p-6 flex-1 flex flex-col">
-            <div class="flex items-center gap-2 mb-3">
-              <div class="flex text-white text-xs">★★★★★</div>
-              <span class="font-mono text-[9px] text-white/50 uppercase tracking-wider">Verified</span>
-            </div>
-            <blockquote class="font-display text-[15px] italic text-white/85 leading-relaxed flex-1">
-              "My father spent three years on dialysis in Kismayo. Locally there was no transplant programme. Max Healthcare's team coordinated everything — matched the donor, handled all the Somali paperwork, and arranged an Arabic-speaking nurse throughout. My father walks without a dialysis machine today."
-            </blockquote>
-            <div class="mt-5 pt-4 border-t border-white/20">
-              <div class="flex items-center gap-2.5">
-                <div class="w-8 h-8 rounded-full bg-white/20 border border-white/30 flex items-center justify-center text-sm">🫀</div>
-                <div>
-                  <p class="font-semibold text-[13px] text-white">Ahmed Noor Ibrahim</p>
-                  <p class="font-mono text-[9px] text-white/70 uppercase tracking-wider mt-0.5">Kidney Transplant · Kismayo</p>
-                </div>
+          <span class="absolute top-3 right-3 text-xl">🇸🇩</span>
+        </div>
+        <div class="p-6 flex-1 flex flex-col">
+          <div class="flex items-center gap-2 mb-3">
+            <div class="flex text-gold text-xs">★★★★★</div>
+            <span class="font-mono text-[9px] text-ink/40 uppercase tracking-wider">Verified</span>
+          </div>
+          <blockquote class="font-display text-[14px] italic text-ink/75 leading-relaxed flex-1">
+            "We had been trying for eight years. With the war disrupting Khartoum, finding proper medical care felt impossible. CK Birla's IVF programme worked on the first cycle. Our daughter was born healthy and beautiful."
+          </blockquote>
+          <div class="mt-5 pt-4 border-t border-ink/8">
+            <div class="flex items-center gap-2.5">
+              <div class="w-8 h-8 rounded-full bg-rose-100 flex items-center justify-center text-sm">🌸</div>
+              <div>
+                <p class="font-semibold text-[13px] text-ink">Maryam Al-Tayeb Salih</p>
+                <p class="font-mono text-[9px] text-teal uppercase tracking-wider mt-0.5">IVF Success · Khartoum, Sudan</p>
               </div>
             </div>
           </div>
         </div>
-
       </div>
-    </div>
 
-    <!-- ── Sudan testimonials ── -->
-    <div class="mb-16">
-      <div class="flex items-center gap-4 mb-8 reveal">
-        <span class="text-4xl">🇸🇩</span>
-        <div>
-          <h3 class="font-display text-2xl font-semibold text-ink">Sudan</h3>
-          <span class="font-mono text-[10px] text-gold uppercase tracking-widest">Khartoum · Omdurman · Port Sudan</span>
-        </div>
-        <div class="flex-1 h-px bg-ink/10 ms-4"></div>
-      </div>
-      <div class="grid md:grid-cols-3 gap-6">
-
-        <!-- IVF · Sudan -->
-        <div class="testi-card bg-white rounded-2xl border border-ink/8 shadow-sm overflow-hidden flex flex-col reveal">
-          <div class="h-44 overflow-hidden relative gallery-item">
-            <img src="https://images.unsplash.com/photo-1555252333-9f8e92e65df9?auto=format&fit=crop&w=600&q=80"
-              alt="IVF fertility success family" class="w-full h-full object-cover rounded-none" />
-            <div class="img-overlay"></div>
-            <div class="absolute top-3 left-3"><span class="badge bg-rose-500/20 border border-rose-400/30 text-rose-200 text-[9px] backdrop-blur-sm">🌸 IVF Fertility</span></div>
-            <div class="absolute bottom-3 right-3 bg-ink/60 backdrop-blur-sm rounded-lg px-2.5 py-1.5">
-              <span class="font-mono text-[9px] text-gold uppercase tracking-widest block">CK Birla Hospital</span>
-              <span class="font-mono text-[8px] text-white/50 block">IVF Centre</span>
-            </div>
+      <!-- Card 4: Sudan · Liver Transplant (Fortis) -->
+      <div class="testi-card bg-teal rounded-2xl border border-teal/30 shadow-sm overflow-hidden flex flex-col reveal delay-300">
+        <div class="h-44 overflow-hidden relative gallery-item">
+          <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=600&q=80" alt="Patient recovery liver transplant" class="w-full h-full object-cover rounded-none" />
+          <div class="absolute inset-0 bg-gradient-to-t from-teal/85 via-teal/20 to-transparent"></div>
+          <div class="absolute top-3 left-3"><span class="badge bg-white/20 border border-white/30 text-white text-[9px] backdrop-blur-sm">🫀 Liver Transplant</span></div>
+          <div class="absolute bottom-3 right-3 bg-ink/60 backdrop-blur-sm rounded-lg px-2.5 py-1.5">
+            <span class="font-mono text-[9px] text-gold uppercase tracking-widest block">Fortis Memorial</span>
+            <span class="font-mono text-[8px] text-white/50 block">Liver Institute</span>
           </div>
-          <div class="p-6 flex-1 flex flex-col">
-            <div class="flex items-center gap-2 mb-3">
-              <div class="flex text-gold text-xs">★★★★★</div>
-              <span class="font-mono text-[9px] text-ink/40 uppercase tracking-wider">Verified</span>
-            </div>
-            <blockquote class="font-display text-[15px] italic text-ink/75 leading-relaxed flex-1">
-              "We had been trying for eight years. With the war disrupting everything in Khartoum, finding proper medical care felt impossible. CK Birla's IVF programme worked on the first cycle. My husband cannot stop thanking Allah and the doctors. Our daughter was born healthy and beautiful."
-            </blockquote>
-            <div class="mt-5 pt-4 border-t border-ink/8">
-              <div class="flex items-center gap-2.5">
-                <div class="w-8 h-8 rounded-full bg-rose-100 flex items-center justify-center text-sm">🌸</div>
-                <div>
-                  <p class="font-semibold text-[13px] text-ink">Maryam Al-Tayeb Salih</p>
-                  <p class="font-mono text-[9px] text-teal uppercase tracking-wider mt-0.5">IVF Success · First Cycle · Khartoum</p>
-                </div>
+          <span class="absolute top-3 right-3 text-xl">🇸🇩</span>
+        </div>
+        <div class="p-6 flex-1 flex flex-col">
+          <div class="flex items-center gap-2 mb-3">
+            <div class="flex text-white text-xs">★★★★★</div>
+            <span class="font-mono text-[9px] text-white/50 uppercase tracking-wider">Verified</span>
+          </div>
+          <blockquote class="font-display text-[14px] italic text-white/85 leading-relaxed flex-1">
+            "Chronic hepatitis had destroyed my liver. Fortis operated successfully, matching our donor flawlessly. The Sudanese coordinator they assigned spoke our dialect and supported us. I am back home, healthy and working."
+          </blockquote>
+          <div class="mt-5 pt-4 border-t border-white/20">
+            <div class="flex items-center gap-2.5">
+              <div class="w-8 h-8 rounded-full bg-white/20 border border-white/30 flex items-center justify-center text-sm">🫀</div>
+              <div>
+                <p class="font-semibold text-[13px] text-white">Khalid Bashir Mohammed</p>
+                <p class="font-mono text-[9px] text-white/70 uppercase tracking-wider mt-0.5">Liver Transplant · Port Sudan, Sudan</p>
               </div>
             </div>
           </div>
         </div>
+      </div>
 
-        <!-- Oncology · Sudan -->
-        <div class="testi-card bg-ink rounded-2xl border border-white/5 shadow-sm overflow-hidden flex flex-col reveal delay-100">
-          <div class="h-44 overflow-hidden relative gallery-item">
-            <img src="https://images.unsplash.com/photo-1582719471137-c3967ffb1c42?auto=format&fit=crop&w=600&q=80"
-              alt="Cancer treatment oncology ward" class="w-full h-full object-cover rounded-none" />
-            <div class="absolute inset-0 bg-gradient-to-t from-ink/85 via-ink/20 to-transparent"></div>
-            <div class="absolute top-3 left-3"><span class="badge bg-amber-500/20 border border-amber-400/30 text-amber-300 text-[9px] backdrop-blur-sm">🎗️ Lymphoma</span></div>
-            <div class="absolute bottom-3 right-3 bg-ink/60 backdrop-blur-sm rounded-lg px-2.5 py-1.5">
-              <span class="font-mono text-[9px] text-gold uppercase tracking-widest block">Apollo Hospitals</span>
-              <span class="font-mono text-[8px] text-white/50 block">Bone Marrow Unit</span>
-            </div>
+      <!-- Card 5: Iraq · IVF (Apollo) -->
+      <div class="testi-card bg-white rounded-2xl border border-ink/8 shadow-sm overflow-hidden flex flex-col reveal">
+        <div class="h-44 overflow-hidden relative gallery-item">
+          <img src="https://images.unsplash.com/photo-1609220136736-443140cffec6?auto=format&fit=crop&w=500&q=80" alt="IVF happy couple pregnancy" class="w-full h-full object-cover rounded-none" />
+          <div class="img-overlay"></div>
+          <div class="absolute top-3 left-3"><span class="badge bg-rose-500/20 border border-rose-400/30 text-rose-200 text-[9px] backdrop-blur-sm">🌸 IVF</span></div>
+          <div class="absolute bottom-3 right-3 bg-ink/60 backdrop-blur-sm rounded-lg px-2.5 py-1.5">
+            <span class="font-mono text-[9px] text-gold uppercase tracking-widest block">Apollo · IVF</span>
           </div>
-          <div class="p-6 flex-1 flex flex-col">
-            <div class="flex items-center gap-2 mb-3">
-              <div class="flex text-gold text-xs">★★★★★</div>
-              <span class="font-mono text-[9px] text-white/30 uppercase tracking-wider">Verified</span>
-            </div>
-            <blockquote class="font-display text-[15px] italic text-white/75 leading-relaxed flex-1">
-              "My son was 14 when diagnosed with Hodgkin's lymphoma in Omdurman. Sudan had no bone marrow transplant unit. The CureForSure team found us a matched donor through Apollo's international registry within three weeks. My son sat his university entrance exams last month. Completely cured."
-            </blockquote>
-            <div class="mt-5 pt-4 border-t border-white/10">
-              <div class="flex items-center gap-2.5">
-                <div class="w-8 h-8 rounded-full bg-amber-900/40 border border-amber-700/40 flex items-center justify-center text-sm">🎗️</div>
-                <div>
-                  <p class="font-semibold text-[13px] text-white">Tariq Al-Mahdi (Father)</p>
-                  <p class="font-mono text-[9px] text-gold uppercase tracking-wider mt-0.5">BMT · Hodgkin's Lymphoma · Omdurman</p>
-                </div>
+          <span class="absolute top-3 right-3 text-xl">🇮🇶</span>
+        </div>
+        <div class="p-6 flex-1 flex flex-col">
+          <div class="flex items-center gap-2 mb-3">
+            <div class="flex text-gold text-xs">★★★★★</div>
+            <span class="font-mono text-[9px] text-ink/40 uppercase tracking-wider">Verified</span>
+          </div>
+          <blockquote class="font-display text-[14px] italic text-ink/75 leading-relaxed flex-1">
+            "We came from Erbil after four failed cycles in Turkey. The Apollo fertility specialists identified a chromosomal issue and used PGT-A testing on the embryos. We are expecting our first child in November."
+          </blockquote>
+          <div class="mt-5 pt-4 border-t border-ink/8">
+            <div class="flex items-center gap-2.5">
+              <div class="w-8 h-8 rounded-full bg-rose-100 flex items-center justify-center text-sm">🌸</div>
+              <div>
+                <p class="font-semibold text-[13px] text-ink">Layla &amp; Saman Rashid</p>
+                <p class="font-mono text-[9px] text-teal uppercase tracking-wider mt-0.5">IVF Success · Erbil, Iraq</p>
               </div>
             </div>
           </div>
         </div>
+      </div>
 
-        <!-- Liver Transplant · Sudan -->
-        <div class="testi-card bg-white rounded-2xl border border-ink/8 shadow-sm overflow-hidden flex flex-col reveal delay-200">
-          <div class="h-44 overflow-hidden relative gallery-item">
-            <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=600&q=80"
-              alt="Patient recovery liver transplant" class="w-full h-full object-cover rounded-none" />
-            <div class="img-overlay"></div>
-            <div class="absolute top-3 left-3"><span class="badge bg-teal/30 border border-teal/40 text-teal-200 text-[9px] backdrop-blur-sm">🫀 Liver Transplant</span></div>
-            <div class="absolute bottom-3 right-3 bg-ink/60 backdrop-blur-sm rounded-lg px-2.5 py-1.5">
-              <span class="font-mono text-[9px] text-gold uppercase tracking-widest block">Fortis Memorial</span>
-              <span class="font-mono text-[8px] text-white/50 block">Liver Institute</span>
-            </div>
+      <!-- Card 6: Iraq · Spine Surgery (CK Birla) -->
+      <div class="testi-card bg-ink rounded-2xl border border-white/5 shadow-sm overflow-hidden flex flex-col reveal delay-100">
+        <div class="h-44 overflow-hidden relative gallery-item">
+          <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=500&q=80" alt="Patient physiotherapy recovery" class="w-full h-full object-cover rounded-none" />
+          <div class="absolute inset-0 bg-gradient-to-t from-ink/85 via-ink/20 to-transparent"></div>
+          <div class="absolute top-3 left-3"><span class="badge bg-purple-500/20 border border-purple-400/30 text-purple-200 text-[9px] backdrop-blur-sm">🦴 Spine Surgery</span></div>
+          <div class="absolute bottom-3 right-3 bg-ink/60 backdrop-blur-sm rounded-lg px-2.5 py-1.5">
+            <span class="font-mono text-[9px] text-gold uppercase tracking-widest block">CK Birla · Spine</span>
           </div>
-          <div class="p-6 flex-1 flex flex-col">
-            <div class="flex items-center gap-2 mb-3">
-              <div class="flex text-gold text-xs">★★★★★</div>
-              <span class="font-mono text-[9px] text-ink/40 uppercase tracking-wider">Verified</span>
-            </div>
-            <blockquote class="font-display text-[15px] italic text-ink/75 leading-relaxed flex-1">
-              "Chronic hepatitis had destroyed my liver by the time I reached Port Sudan's hospital. They sent me to India. The Fortis liver transplant team — one of Asia's best — operated successfully. The Sudanese coordinator they assigned spoke our dialect. I am back home, working, and healthy."
-            </blockquote>
-            <div class="mt-5 pt-4 border-t border-ink/8">
-              <div class="flex items-center gap-2.5">
-                <div class="w-8 h-8 rounded-full bg-teal/15 border border-teal/25 flex items-center justify-center text-sm">🫀</div>
-                <div>
-                  <p class="font-semibold text-[13px] text-ink">Khalid Bashir Mohammed</p>
-                  <p class="font-mono text-[9px] text-teal uppercase tracking-wider mt-0.5">Liver Transplant · Port Sudan</p>
-                </div>
+          <span class="absolute top-3 right-3 text-xl">🇮🇶</span>
+        </div>
+        <div class="p-6 flex-1 flex flex-col">
+          <div class="flex items-center gap-2 mb-3">
+            <div class="flex text-gold text-xs">★★★★★</div>
+            <span class="font-mono text-[9px] text-white/30 uppercase tracking-wider">Verified</span>
+          </div>
+          <blockquote class="font-display text-[14px] italic text-white/75 leading-relaxed flex-1">
+            "A war injury left me with crushed vertebrae and leg paralysis. No local surgeons would operate. CK Birla's robotic spine team performed a reconstruction and I walked at my son's wedding three months later."
+          </blockquote>
+          <div class="mt-5 pt-4 border-t border-white/10">
+            <div class="flex items-center gap-2.5">
+              <div class="w-8 h-8 rounded-full bg-purple-900/40 border border-purple-700/40 flex items-center justify-center text-sm">🦴</div>
+              <div>
+                <p class="font-semibold text-[13px] text-white">Yousif Al-Samarrai</p>
+                <p class="font-mono text-[9px] text-gold uppercase tracking-wider mt-0.5">Spine Reconstruction · Mosul, Iraq</p>
               </div>
             </div>
           </div>
         </div>
-
       </div>
-    </div>
 
-    <!-- ── Iraq testimonials ── -->
-    <div>
-      <div class="flex items-center gap-4 mb-8 reveal">
-        <span class="text-4xl">🇮🇶</span>
-        <div>
-          <h3 class="font-display text-2xl font-semibold text-ink">Iraq</h3>
-          <span class="font-mono text-[10px] text-gold uppercase tracking-widest">Baghdad · Erbil · Basra · Mosul</span>
+      <!-- Card 7: Zimbabwe · Cardiology (Max Healthcare) -->
+      <div class="testi-card bg-white rounded-2xl border border-ink/8 shadow-sm overflow-hidden flex flex-col reveal delay-200">
+        <div class="h-44 overflow-hidden relative gallery-item">
+          <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=500&q=80" alt="Cardiac surgery team" class="w-full h-full object-cover rounded-none" />
+          <div class="img-overlay"></div>
+          <div class="absolute top-3 left-3"><span class="badge bg-blue-500/20 border border-blue-400/30 text-blue-700 text-[9px] backdrop-blur-sm">🫀 Cardiology</span></div>
+          <div class="absolute bottom-3 right-3 bg-ink/60 backdrop-blur-sm rounded-lg px-2.5 py-1.5">
+            <span class="font-mono text-[9px] text-gold uppercase tracking-widest block">Max Healthcare</span>
+            <span class="font-mono text-[8px] text-white/50 block">Cardiac Center</span>
+          </div>
+          <span class="absolute top-3 right-3 text-xl">🇿🇼</span>
         </div>
-        <div class="flex-1 h-px bg-ink/10 ms-4"></div>
+        <div class="p-6 flex-1 flex flex-col">
+          <div class="flex items-center gap-2 mb-3">
+            <div class="flex text-gold text-xs">★★★★★</div>
+            <span class="font-mono text-[9px] text-ink/40 uppercase tracking-wider">Verified</span>
+          </div>
+          <blockquote class="font-display text-[14px] italic text-ink/75 leading-relaxed flex-1">
+            "I traveled from Harare to New Delhi for advanced coronary bypass surgery. The local surgical options were limited, but CureForSure coordinated my travel, visa, and treatment flawlessly. The surgeon was world-class."
+          </blockquote>
+          <div class="mt-5 pt-4 border-t border-ink/8">
+            <div class="flex items-center gap-2.5">
+              <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center text-sm">🫀</div>
+              <div>
+                <p class="font-semibold text-[13px] text-ink">Tariro Moyo</p>
+                <p class="font-mono text-[9px] text-teal uppercase tracking-wider mt-0.5">Bypass Surgery · Harare, Zimbabwe</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
 
-        <!-- IVF · Iraq -->
-        <div class="testi-card bg-white rounded-2xl border border-ink/8 shadow-sm overflow-hidden flex flex-col reveal">
-          <div class="h-44 overflow-hidden relative gallery-item">
-            <img src="https://images.unsplash.com/photo-1609220136736-443140cffec6?auto=format&fit=crop&w=500&q=80"
-              alt="IVF happy couple pregnancy" class="w-full h-full object-cover rounded-none" />
-            <div class="img-overlay"></div>
-            <div class="absolute top-3 left-3"><span class="badge bg-rose-500/20 border border-rose-400/30 text-rose-200 text-[9px] backdrop-blur-sm">🌸 IVF</span></div>
-            <div class="absolute bottom-3 right-3 bg-ink/60 backdrop-blur-sm rounded-lg px-2.5 py-1.5">
-              <span class="font-mono text-[9px] text-gold uppercase tracking-widest">Apollo · IVF</span>
-            </div>
+      <!-- Card 8: Zimbabwe · Orthopedics (Apollo) -->
+      <div class="testi-card bg-teal rounded-2xl border border-teal/30 shadow-sm overflow-hidden flex flex-col reveal delay-300">
+        <div class="h-44 overflow-hidden relative gallery-item">
+          <img src="https://images.unsplash.com/photo-1584467735815-f778f274e296?auto=format&fit=crop&w=500&q=80" alt="Joint rehab patient walking" class="w-full h-full object-cover rounded-none" />
+          <div class="absolute inset-0 bg-gradient-to-t from-teal/85 via-teal/20 to-transparent"></div>
+          <div class="absolute top-3 left-3"><span class="badge bg-white/20 border border-white/30 text-white text-[9px] backdrop-blur-sm">🦴 Orthopedics</span></div>
+          <div class="absolute bottom-3 right-3 bg-ink/60 backdrop-blur-sm rounded-lg px-2.5 py-1.5">
+            <span class="font-mono text-[9px] text-gold uppercase tracking-widest block">Apollo Hospitals</span>
+            <span class="font-mono text-[8px] text-white/50 block">Robotics Unit</span>
           </div>
-          <div class="p-6 flex-1 flex flex-col">
-            <div class="flex items-center gap-2 mb-3">
-              <div class="flex text-gold text-xs">★★★★★</div>
-              <span class="font-mono text-[9px] text-ink/40 uppercase tracking-wider">Verified</span>
-            </div>
-            <blockquote class="font-display text-[14px] italic text-ink/75 leading-relaxed flex-1">
-              "We came from Erbil after four failed cycles in Turkey. The Apollo fertility specialists identified a chromosomal issue and used PGT-A testing on the embryos. We are expecting our first child in November. No words can describe our gratitude."
-            </blockquote>
-            <div class="mt-4 pt-4 border-t border-ink/8">
-              <p class="font-semibold text-[13px] text-ink">Layla &amp; Saman Rashid</p>
-              <p class="font-mono text-[9px] text-teal uppercase tracking-wider mt-0.5">IVF · PGT-A · Erbil</p>
+          <span class="absolute top-3 right-3 text-xl">🇿🇼</span>
+        </div>
+        <div class="p-6 flex-1 flex flex-col">
+          <div class="flex items-center gap-2 mb-3">
+            <div class="flex text-white text-xs">★★★★★</div>
+            <span class="font-mono text-[9px] text-white/50 uppercase tracking-wider">Verified</span>
+          </div>
+          <blockquote class="font-display text-[14px] italic text-white/85 leading-relaxed flex-1">
+            "Osteoarthritis had left me wheelchair-bound in Bulawayo. CureForSure arranged my joint replacement using the latest Mako robotic system. The recovery was swift, and I walk pain-free today."
+          </blockquote>
+          <div class="mt-5 pt-4 border-t border-white/20">
+            <div class="flex items-center gap-2.5">
+              <div class="w-8 h-8 rounded-full bg-white/20 border border-white/30 flex items-center justify-center text-sm">🦴</div>
+              <div>
+                <p class="font-semibold text-[13px] text-white">Tendai Ndlovu</p>
+                <p class="font-mono text-[9px] text-white/70 uppercase tracking-wider mt-0.5">Joint Replacement · Bulawayo, Zimbabwe</p>
+              </div>
             </div>
           </div>
         </div>
-
-        <!-- Oncology · Iraq -->
-        <div class="testi-card bg-ink rounded-2xl border border-white/5 shadow-sm overflow-hidden flex flex-col reveal delay-100">
-          <div class="h-44 overflow-hidden relative gallery-item">
-            <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=500&q=80"
-              alt="Robotic cancer surgery successful" class="w-full h-full object-cover rounded-none" />
-            <div class="absolute inset-0 bg-gradient-to-t from-ink/85 via-ink/20 to-transparent"></div>
-            <div class="absolute top-3 left-3"><span class="badge bg-amber-500/20 border border-amber-400/30 text-amber-300 text-[9px] backdrop-blur-sm">🎗️ Prostate Cancer</span></div>
-            <div class="absolute bottom-3 right-3 bg-ink/60 backdrop-blur-sm rounded-lg px-2.5 py-1.5">
-              <span class="font-mono text-[9px] text-gold uppercase tracking-widest">Max · Oncology</span>
-            </div>
-          </div>
-          <div class="p-6 flex-1 flex flex-col">
-            <div class="flex items-center gap-2 mb-3">
-              <div class="flex text-gold text-xs">★★★★★</div>
-              <span class="font-mono text-[9px] text-white/30 uppercase tracking-wider">Verified</span>
-            </div>
-            <blockquote class="font-display text-[14px] italic text-white/75 leading-relaxed flex-1">
-              "Prostate cancer Stage 2 diagnosed in Baghdad. DaVinci robotic surgery at Max removed the tumour with zero nerve damage — I was walking the next morning. The Iraqi patient coordinator was with me every single day. PSA undetectable at six months."
-            </blockquote>
-            <div class="mt-4 pt-4 border-t border-white/10">
-              <p class="font-semibold text-[13px] text-white">Hassan Al-Dulaimi</p>
-              <p class="font-mono text-[9px] text-gold uppercase tracking-wider mt-0.5">Robotic Prostatectomy · Baghdad</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Kidney Transplant · Iraq -->
-        <div class="testi-card bg-teal rounded-2xl border border-teal/30 shadow-sm overflow-hidden flex flex-col reveal delay-200">
-          <div class="h-44 overflow-hidden relative gallery-item">
-            <img src="https://images.unsplash.com/photo-1551190822-a9333d879b1f?auto=format&fit=crop&w=500&q=80"
-              alt="Transplant surgery operating theatre" class="w-full h-full object-cover rounded-none" />
-            <div class="absolute inset-0 bg-gradient-to-t from-teal/85 via-teal/20 to-transparent"></div>
-            <div class="absolute top-3 left-3"><span class="badge bg-white/20 border border-white/30 text-white text-[9px] backdrop-blur-sm">🫀 Kidney</span></div>
-            <div class="absolute bottom-3 right-3 bg-ink/60 backdrop-blur-sm rounded-lg px-2.5 py-1.5">
-              <span class="font-mono text-[9px] text-gold uppercase tracking-widest">Fortis · Transplant</span>
-            </div>
-          </div>
-          <div class="p-6 flex-1 flex flex-col">
-            <div class="flex items-center gap-2 mb-3">
-              <div class="flex text-white text-xs">★★★★★</div>
-              <span class="font-mono text-[9px] text-white/50 uppercase tracking-wider">Verified</span>
-            </div>
-            <blockquote class="font-display text-[14px] italic text-white/85 leading-relaxed flex-1">
-              "I had end-stage renal failure from Basra. After being waitlisted in Baghdad for two years, CureForSure connected us to Fortis. We donated a kidney from my brother. The surgery, recovery, and follow-up were flawless. I haven't visited a dialysis centre in 18 months."
-            </blockquote>
-            <div class="mt-4 pt-4 border-t border-white/20">
-              <p class="font-semibold text-[13px] text-white">Mustafa Al-Zubaidi</p>
-              <p class="font-mono text-[9px] text-white/70 uppercase tracking-wider mt-0.5">Kidney Transplant · Basra</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Neurosurgery + Ortho · Iraq -->
-        <div class="testi-card bg-white rounded-2xl border border-ink/8 shadow-sm overflow-hidden flex flex-col reveal delay-300">
-          <div class="h-44 overflow-hidden relative gallery-item">
-            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=500&q=80"
-              alt="Patient physiotherapy recovery walking" class="w-full h-full object-cover rounded-none" />
-            <div class="img-overlay"></div>
-            <div class="absolute top-3 left-3"><span class="badge bg-purple-500/20 border border-purple-400/30 text-purple-200 text-[9px] backdrop-blur-sm">🦴 Spine Surgery</span></div>
-            <div class="absolute bottom-3 right-3 bg-ink/60 backdrop-blur-sm rounded-lg px-2.5 py-1.5">
-              <span class="font-mono text-[9px] text-gold uppercase tracking-widest">CK Birla · Spine</span>
-            </div>
-          </div>
-          <div class="p-6 flex-1 flex flex-col">
-            <div class="flex items-center gap-2 mb-3">
-              <div class="flex text-gold text-xs">★★★★★</div>
-              <span class="font-mono text-[9px] text-ink/40 uppercase tracking-wider">Verified</span>
-            </div>
-            <blockquote class="font-display text-[14px] italic text-ink/75 leading-relaxed flex-1">
-              "A war injury left me with three crushed vertebrae and paralysis in my left leg. No surgeon in Mosul or Erbil would operate. CK Birla's robotic spine team performed a six-hour reconstruction. I walked with a cane at my son's wedding three months later. I still cry thinking about it."
-            </blockquote>
-            <div class="mt-4 pt-4 border-t border-ink/8">
-              <p class="font-semibold text-[13px] text-ink">Yousif Al-Samarrai</p>
-              <p class="font-mono text-[9px] text-teal uppercase tracking-wider mt-0.5">Robotic Spine Reconstruction · Mosul</p>
-            </div>
-          </div>
-        </div>
-
       </div>
+
     </div>
 
     <!-- Summary trust strip -->
@@ -1209,7 +1127,7 @@
       <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
         <div>
           <span class="font-display text-4xl text-gold font-semibold block">340+</span>
-          <span class="font-mono text-[10px] text-white/40 uppercase tracking-widest block mt-1">Patients from Somalia, Sudan &amp; Iraq</span>
+          <span class="font-mono text-[10px] text-white/40 uppercase tracking-widest block mt-1">Patients from Somalia, Sudan, Iraq &amp; Zimbabwe</span>
         </div>
         <div>
           <span class="font-display text-4xl text-gold font-semibold block">96%</span>
@@ -1252,7 +1170,10 @@
     </div>
     <div class="text-center md:text-end">
       <span class="block text-white/40 text-[11px] font-mono uppercase tracking-widest">Direct Support</span>
-      <a href="tel:+919205841758" class="text-gold font-bold text-base tracking-wide mt-1 inline-block hover:text-goldlt transition-colors" dir="ltr">+91 92058 41758</a>
+      <div class="flex flex-col gap-0.5 mt-1">
+        <a href="tel:+919205841758" class="text-gold font-bold text-sm tracking-wide hover:text-goldlt transition-colors" dir="ltr">+91 92058 41758</a>
+        <a href="tel:+917905623176" class="text-gold font-bold text-sm tracking-wide hover:text-goldlt transition-colors" dir="ltr">+91 79056 23176</a>
+      </div>
     </div>
   </div>
 </footer>
